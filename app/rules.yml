@@ -1,0 +1,13 @@
+# This file is used to define the rules for the sensitive data.
+# The rules are used to match the sensitive data in the code.
+# Below are some examples of the rules.
+# You can add your own rules here.
+phone-number:
+  pattern: /^1[3456789]\d{9}$/
+  message: A string was found that appears to be a phone number
+email:
+  pattern: /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/
+  message: A string was found that appears to be an email address
+password:
+  pattern: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/
+  message: A string was found that appears to be a password
